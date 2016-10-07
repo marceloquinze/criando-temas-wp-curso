@@ -1,0 +1,80 @@
+/*
+Descrição: Folha de estilos criada para o curso "Criando Temas Customizados com WordPress"
+Autor: Marcelo Vieira
+Homepage: http://www.websitesmaringa.com.br
+*/
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body{ font: 16px/1.6 'Oswald', sans-serif;  }
+body p{ font: 16px/1.6 'Lato', sans-serif; }
+h1{ font-size: 28px; margin:15px 0 15px; }
+h2{ font-size: 24px; margin-top: 0;}
+h3{ font-size: 20px; margin-top: 0;}
+h4{ font-size: 18px; margin-top: 0;}
+
+/* Header - Barra Topo */
+.barra-topo{ background: #b9121b; color: #fff; padding: 15px 0; }
+
+/* Redes Sociais */
+.redes-sociais ul{ padding: 0; margin: 0; }
+.redes-sociais ul li{ list-style: none; display: inline; margin: 0 5px 0; }
+
+/* Header - Menu Principal */
+.area-menu{ background: #f3f3f3; padding: 15px 0; }
+.menu-principal ul{ list-style: none; padding: 0; margin: 0; font-size: 28px; }
+.menu-principal ul li{ display: inline;  margin: 0 30px 0 0;}
+.menu-principal ul li:last-child{ margin: 0; }
+.menu-principal ul li a{ text-transform: uppercase; color: #4c1b1b;  text-decoration: none;}
+.menu-principal ul  li.current-menu-item a{ color:#e58888; }
+
+/* Serviços */
+.servicos{ background: #4c1b1b; padding: 25px 0; color: #fefefe; }
+
+/* Meio */
+.meio{ padding: 25px 0; }
+.meio h1{ color: #4c1b1b; text-transform: uppercase;  }
+.noticia-destaque .miniatura{ max-height: 400px; overflow: hidden; }
+.noticia-secundaria .miniatura{ max-height: 150px; overflow: hidden; }
+
+/* Meio - Barra Lateral */
+.barra-lateral{ background: #f6e497; padding: 20px; margin: 0 0 30px;}
+.barra-lateral img.wp-image-136{ width: 100%; height: auto; }
+.barra-lateral .wpcf7 input:not([type=submit]), .barra-lateral .wpcf7 textarea { width: 100%; }
+
+/* Meio - Notícias */
+.noticias .miniatura{ margin: 0 0 15px; }
+
+/* Mapa */
+.mapa .ondeestamos{ background-color: #fcfae1; padding: 20px 0; }
+.mapa h1{ text-align: center; margin: 0; text-transform: uppercase; color: #4c1b1b; font-weight: bold; }
+.mapa .wd-row{ margin: 0; }
+
+/* Rodapé */
+footer{ background: #000; padding: 15px 0; color: #fcfae1; }
+
+/* Rodapé - Menu Secundário */
+.menu-rodape ul{ list-style: none; padding: 0; margin: 0; font-size: 20px; }
+.menu-rodape ul li{ display: inline;  margin: 0 15px 0 0;}
+.menu-rodape ul li:last-child{ margin: 0; }
+.menu-rodape ul li a{ color: #fcfae1;  text-decoration: none;}
+.menu-rodape ul  li.current-menu-item a{ color:#e58888; }
+
+/* Blog */
+.wp-post-image{ float: left; margin: 0 15px 10px 0; }
+.post-format-image h1 { color: #fff; background: #717171; padding: 15px; }
+.post-format-video h1 { color: #fff; background: #211e1e; padding: 15px; }
+.post-format-padrao h1 { color: #444; background: #d2d2d2; padding: 15px; }
+.blog h1 { margin: 0 0 15px; }
+
+/* Demais páginas */
+.conteudo .blog, .arquivo { margin-bottom: 30px; }
+.arquivo > p { margin-bottom: 15px; font-weight: bold;  }
+.arquivo > h1{ border-bottom: 1px dashed #ccc; margin-bottom: 5px; padding: 15px 0; }
+.conteudo > .container .page, main > .container .post{ margin: 40px 0; }
+.search main .container{ margin-top: 40px; margin-bottom: 40px;  }
+.error404 .widget_recent_entries{ margin-top: 30px; }
+.comment-respond{ margin: 30px 0; }
+.comment-respond label{ width: 100%; }

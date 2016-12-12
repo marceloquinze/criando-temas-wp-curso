@@ -37,7 +37,7 @@
 			<div class="row">
 				<div class="logo col-md-3">Logo</div>
 				<div class="menu-principal col-md-9 text-right">
-					<?php wp_nav_menu( array( 'theme-location' => 'meu_menu_principal') ); ?>
+					<?php wp_nav_menu( array( 'theme_location' => 'meu_menu_principal') ); ?>
 				</div>
 			</div>
 		</div>

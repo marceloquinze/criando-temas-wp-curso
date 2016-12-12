@@ -39,7 +39,7 @@
 					<?php the_custom_logo(); ?>
 				</div>
 				<div class="menu-principal col-md-10 col-sm-10 text-right">
-					<?php wp_nav_menu( array( 'theme-location' => 'meu_menu_principal') ); ?>
+					<?php wp_nav_menu( array( 'theme_location' => 'meu_menu_principal') ); ?>
 				</div>
 			</div>
 		</div>

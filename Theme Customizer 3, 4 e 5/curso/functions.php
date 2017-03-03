@@ -68,6 +68,20 @@ if (function_exists('register_sidebar')){
 	);
 }
 
+// Alterar o número de itens por página no blog
+
+function num_itens_blog( $query ){
+	if( is_admin() || ! $query->is_main_query() )
+	return;
+
+	// Página blog
+	if ( is_home() ){
+		$query->set( 'posts_per_page', 2 );
+		return;
+	}
+}
+
+add_action( 'pre_get_posts', 'num_itens_blog', 1 );
 
 // Shortcodes para mostrar o telefone na página de contato
 

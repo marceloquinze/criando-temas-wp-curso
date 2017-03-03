@@ -1,9 +1,11 @@
-Instruções para uso deste material
+InstruÃ§Ãµes para uso deste material
 
-- Você deve possuir um ambiente de servidor local instalado (Wapp, Xampp, o que você desejar instalar).
-- Descompacte o arquivo zip dentro de uma pasta chamada wpcurso. Não use outro nome.
-- Dentro da wpcurso terá que ver os arquivos e as pastas da instalação do wp (wp_content, wp_admin etc). Ou seja, dentro da wpcurso não deverá haver outra pasta chamada wpcurso. Se fizer assim, vai dar errado.
-- O usuário da instalação do WP é teste e a senha é 1234567
-- O mapa não aparecerá no site. Você terá que gerar uma chave nova para a API do Google Maps funcionar. Para isso, reveja a aula 39 (Instalação do plugin de mapa) e siga as instruções para gerar a sua chave. Depois de gerada, entre na administração do WP e vá em Google Maps WD -> Options, informe a sua chave e salve.
+- VocÃª deve possuir um ambiente de servidor local instalado (Wapp, Xampp, o que vocÃª desejar instalar).
+- Descompacte o arquivo zip dentro de uma pasta chamada wpcurso. NÃ£o use outro nome.
+- Dentro da wpcurso terÃ¡ que ver os arquivos e as pastas da instalaÃ§Ã£o do wp (wp_content, wp_admin etc). Ou seja, dentro da wpcurso nÃ£o deverÃ¡ haver outra pasta chamada wpcurso. Se fizer assim, vai dar errado.
+- Instale o banco de dados pelo PHPMyAdmin com o nome de wp_curso2
+- Verifique o arquivo wp-config.php e veja se o nome do banco, o usuÃ¡rio de banco e a senha estÃ£o corretos
+- O usuÃ¡rio da instalaÃ§Ã£o do WP Ã© teste e a senha Ã© 1234567
+- O mapa nÃ£o aparecerÃ¡ no site. VocÃª terÃ¡ que gerar uma chave nova para a API do Google Maps funcionar. Para isso, reveja a aula 39 (InstalaÃ§Ã£o do plugin de mapa) e siga as instruÃ§Ãµes para gerar a sua chave. Depois de gerada, entre na administraÃ§Ã£o do WP e vÃ¡ em Google Maps WD -> Options, informe a sua chave e salve.
 
 That's all, folks!

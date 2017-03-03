@@ -66,4 +66,4 @@ function num_itens_blog( $query ){
 	}
 }
 
-add_action( 'pre_get_posts', 'num_itens_blog', 1 );
+add_action( 'pre_get_posts', 'num_itens_blog', 1 ); 

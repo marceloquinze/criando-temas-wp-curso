@@ -10,5 +10,5 @@
 		</section>
 		<section class="mapa"></section>
 	</main>	
-</div>
+</div> 
 <?php get_footer(); ?>

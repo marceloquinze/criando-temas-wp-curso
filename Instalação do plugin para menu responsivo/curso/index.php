@@ -11,105 +11,35 @@
 					<div class="blog col-md-9">
 
 						<?php 
-
-						//================================================================//
-						//============== Caso 1 - Usando o loop padrão ==================//
-/*
-						if(have_posts()) :
+							// Se houver algum post
+							if(have_posts()) :
+								// Enquanto houver algum post, chame o post de determinada maneira
 								while (have_posts()) : the_post(); 
-
-									get_template_part('content', get_post_format()); 
- 
-								endwhile;		
 						?>
-								<div class="paginacao text-left">
-									<?php next_posts_link("<< Mais antigos") ?>
-								</div>
 
-								<div class="paginacao text-right">
-									<?php previous_posts_link("Mais novos >>"); ?>
-								</div>						
-
-						<?php else: ?>
-							<p>Nao tem nada ainda pra mostrar</p>
-						<?php endif; */?>
-
+						<?php get_template_part('content', get_post_format()); ?>
 
 						<?php 
-
-						//================================================================//
-						//=== Caso 2 - Usando a classe WP_Query - cópia do loop padrão ===//
-
-/*						$paginaatual = ( get_query_var('paged')) ? get_query_var('paged') : 1;
-
-						$args = array(
-							'posts_per_page' => 2,
-							'paged'	=> $paginaatual
-						);
-
-						echo $paged;
-
-						$consulta = new WP_Query($args);
-
-						if($consulta->have_posts()) :
-								while ($consulta->have_posts()) : $consulta->the_post(); 
-									
-									get_template_part('content', get_post_format()); 
-
-								endwhile;
-
-								wp_reset_postdata();
+						endwhile;
 
 						?>
-								<div class="paginacao text-left">
-									<?php next_posts_link("<< Mais antigos", $consulta->max_num_pages) ?>
-								</div>
 
-								<div class="paginacao text-right">
-									<?php previous_posts_link("Mais novos >>"); ?>
-								</div>						
+						<div class="paginacao text-left">
+							<?php next_posts_link("<< Mais antigos") ?>
+						</div>
 
-						<?php else: ?>
-							<p>Nao tem nada ainda pra mostrar</p>
-						<?php endif; */?>						
+						<div class="paginacao text-right">
+							<?php previous_posts_link("Mais novos >>"); ?>
+						</div>						
 
 						<?php
-						//===============================================================//
-						//===  Caso 3 - Usando query_posts() -> desvio no loop padrão ===//
-
-						$paginaatual = ( get_query_var('paged')) ? get_query_var('paged') : 1;
-
-						$args = array(
-							'posts_per_page' => 2,
-							'paged'	=> $paginaatual
-						);
-
-						query_posts($args);
-
-						if(have_posts()) :
-								while (have_posts()) : the_post(); 
-									
-									get_template_part('content', get_post_format()); 
-
-								endwhile;						
-
-						?>
-								<div class="paginacao text-left">
-									<?php next_posts_link("<< Mais antigos") ?>
-								</div>
-
-								<div class="paginacao text-right">
-									<?php previous_posts_link("Mais novos >>"); ?>
-								</div>						
-
-						<?php else: ?>
+						else:
+						 ?>
 							<p>Nao tem nada ainda pra mostrar</p>
-						<?php endif;
-
-						wp_reset_query();
-
+						<?php 
+						endif;
 						?>
-
+						
 					</div>
 					<aside class="barra-lateral col-md-3">
 						<?php get_sidebar('blog'); ?>

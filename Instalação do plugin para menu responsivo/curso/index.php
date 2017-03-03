@@ -9,7 +9,6 @@
 				<div class="row">
 
 					<div class="blog col-md-9">
-
 						<?php 
 							// Se houver algum post
 							if(have_posts()) :
@@ -24,22 +23,26 @@
 
 						?>
 
-						<div class="paginacao text-left">
-							<?php next_posts_link("<< Mais antigos") ?>
+						<div class="row">
+
+							<div class="paginacao col-md-6 col-sm-6 col-xs-6 text-left">
+								<?php next_posts_link("<< Mais antigos") ?>
+							</div>
+
+							<div class="paginacao col-md-6 col-sm-6 col-xs-6 text-right">
+								<?php previous_posts_link("Mais novos >>"); ?>
+							</div>						
+
+							<?php
+							else:
+							 ?>
+								<p>Nao tem nada ainda pra mostrar</p>
+							<?php 
+							endif;
+							?>
+
 						</div>
 
-						<div class="paginacao text-right">
-							<?php previous_posts_link("Mais novos >>"); ?>
-						</div>						
-
-						<?php
-						else:
-						 ?>
-							<p>Nao tem nada ainda pra mostrar</p>
-						<?php 
-						endif;
-						?>
-						
 					</div>
 					<aside class="barra-lateral col-md-3">
 						<?php get_sidebar('blog'); ?>

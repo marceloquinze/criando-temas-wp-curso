@@ -5,7 +5,7 @@
 				<?php echo get_theme_mod('set_copyright'); ?>
 			</div>
 			<nav class="menu-rodape col-md-5 col-sm-5 col-xs-8 text-right">
-				<?php wp_nav_menu( array('theme-location' => 'menu-rodape') ); ?>
+				<?php wp_nav_menu( array('theme_location' => 'menu_rodape') ); ?>
 			</nav>
 		</div>
 	</div>
